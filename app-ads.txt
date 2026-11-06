@@ -1,0 +1,10 @@
+# Official app-ads.txt for Vivex Network
+# Google AdMob Publisher ID
+
+google.com, pub-5014506892766767, DIRECT, f08c47fec0942fa0
+
+# Meta / Facebook Audience Network (Optional)
+# facebook.com, YOUR_META_PROPERTY_ID, DIRECT
+
+# Unity Ads (Optional)
+# unity3d.com, YOUR_UNITY_GAME_ID, DIRECT

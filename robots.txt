@@ -1,0 +1,10 @@
+# Vivex Network Robots.txt
+User-agent: *
+Allow: /
+
+# Directives for AdMob / Ad Crawlers
+User-agent: Mediapartners-Google
+Allow: /
+
+# Sitemap Location
+Sitemap: https://vivexnetwork.com/sitemap.xml

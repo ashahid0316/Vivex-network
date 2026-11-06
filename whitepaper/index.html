@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitepaper - Vivex Network</title>
+  <meta name="description" content="Official Technical Whitepaper for Vivex Network: Solana SPL Architecture, Tokenomics, Cloud Mining Halving, Anti-Cheat, and TGE Roadmap.">
+  <meta name="keywords" content="Vivex Network Whitepaper, Solana SPL, Tokenomics, Web3 Cloud Mining, Anti-Sybil, Halving Roadmap">
+  <meta name="theme-color" content="#080b11">
+  <link rel="canonical" href="https://vivexnetwork.com/whitepaper/">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="manifest" href="../site.webmanifest">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vivexnetwork.com/whitepaper/">
+  <meta property="og:title" content="Whitepaper - Vivex Network">
+  <meta property="og:description" content="Explore Vivex Network technical architecture, Solana SPL integration, tokenomics, and consensus roadmap.">
+  <meta property="og:site_name" content="Vivex Network">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Whitepaper - Vivex Network">
+  <meta name="twitter:description" content="Official documentation and whitepaper for Vivex Network Web3 cloud mining ecosystem.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- JSON-LD Structured Data for Google Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vivexnetwork.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Whitepaper",
+            "item": "https://vivexnetwork.com/whitepaper/"
+          }
+        ]
+      },
+      {
+        "@type": "TechArticle",
+        "headline": "Vivex Network Official Technical Whitepaper v1.0",
+        "description": "Democratizing Global Web3 Access via Lightweight Mobile Consensus on Solana Blockchain.",
+        "url": "https://vivexnetwork.com/whitepaper/",
+        "author": {
+          "@type": "Organization",
+          "name": "Vivex Network"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="bg-glow-container">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../" class="logo">
+        <div class="logo-icon">V</div>
+        <div class="logo-text">Vivex <span>Network</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../" class="nav-link">Home</a></li>
+          <li><a href="./" class="nav-link active">Whitepaper</a></li>
+          <li><a href="../privacy/" class="nav-link">Privacy Policy</a></li>
+          <li><a href="../terms/" class="nav-link">Terms of Service</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="../#download" class="btn btn-primary">Get App</a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="badge-glow">
+        <span class="badge-dot"></span>
+        <span>TECHNICAL WHITEPAPER V1.0 • SOLANA SPL NATIVE</span>
+      </div>
+      <h1 class="page-title">Vivex Network Technical Whitepaper</h1>
+      <p class="page-desc">Democratizing Global Web3 Access via Lightweight Mobile Cloud Consensus & Capped 1B Deflationary Tokenomics.</p>
+    </div>
+  </section>
+
+  <!-- Key Metrics Summary Banner -->
+  <section class="section" style="padding: 2rem 0 0;">
+    <div class="container">
+      <div class="grid-3" style="gap: 1rem;">
+        <div class="feature-card" style="padding: 1.25rem 1.5rem; text-align: center;">
+          <h4 style="color: var(--primary-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">TOTAL CAPPED SUPPLY</h4>
+          <p style="font-size: 1.75rem; font-weight: 800; color: var(--text-main); margin-top: 0.25rem;">1 Billion $VVX</p>
+        </div>
+        <div class="feature-card" style="padding: 1.25rem 1.5rem; text-align: center;">
+          <h4 style="color: var(--accent-cyan); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">BLOCKCHAIN PROTOCOL</h4>
+          <p style="font-size: 1.75rem; font-weight: 800; color: var(--text-main); margin-top: 0.25rem;">Solana SPL Standard</p>
+        </div>
+        <div class="feature-card" style="padding: 1.25rem 1.5rem; text-align: center;">
+          <h4 style="color: #ec4899; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">UNMINED TOKEN BURN</h4>
+          <p style="font-size: 1.75rem; font-weight: 800; color: var(--text-main); margin-top: 0.25rem;">100% Unmined Burn at TGE</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Document Content -->
+  <div class="container">
+    <div class="document-layout">
+
+      <!-- Sidebar Table of Contents -->
+      <aside class="doc-sidebar">
+        <h4 class="sidebar-title">Chapters</h4>
+        <ul class="sidebar-nav">
+          <li><a href="#ch1" class="sidebar-link active">1. Executive Summary</a></li>
+          <li><a href="#ch2" class="sidebar-link">2. Blockchain & Security</a></li>
+          <li><a href="#ch3" class="sidebar-link">3. Tokenomics & Burn</a></li>
+          <li><a href="#ch4" class="sidebar-link">4. Roadmap & Halving</a></li>
+          <li><a href="#ch5" class="sidebar-link">5. Anti-Cheat Security</a></li>
+          <li><a href="#ch6" class="sidebar-link">6. Privacy & GDPR</a></li>
+          <li><a href="#ch7" class="sidebar-link">7. Utility & DAO</a></li>
+          <li><a href="#ch8" class="sidebar-link">8. Legal Disclaimers</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Body -->
+      <main class="doc-content">
+
+        <!-- Chapter 1 -->
+        <section id="ch1" class="doc-section">
+          <div class="badge-glow" style="margin-bottom: 0.5rem;">CHAPTER 01 • SOLANA NATIVE SPL PROTOCOL</div>
+          <h2>1. Executive Summary & Market Vision</h2>
+          <p><strong>Subtitle:</strong> Democratizing Global Web3 Access via Lightweight Mobile Consensus</p>
+
+          <h3>1.1 The Web3 Mining Dilemma & Centralization Risk</h3>
+          <p>
+            Traditional cryptocurrency mining protocols (such as Bitcoin Proof-of-Work) have devolved into heavily centralized industrial operations. Monopolized by ASIC warehouses and consuming gigawatts of fossil-fuel electricity, computational barriers exclude over 4 billion smartphone users globally from participating in early Web3 token distribution.
+          </p>
+          <ul>
+            <li><strong>Prohibitive Capital Requirements:</strong> ASICs and GPU rigs cost thousands of dollars.</li>
+            <li><strong>Environmental Impact:</strong> Massive carbon emissions and electronic hardware waste.</li>
+            <li><strong>Geographic & Institutional Centralization:</strong> Mining pools dictate network consensus.</li>
+          </ul>
+
+          <h3>1.2 The Vivex Network Mobile Protocol Solution</h3>
+          <p>
+            Vivex Network ($VVX) introduces a paradigm shift: an energy-efficient, cloud-simulated distribution consensus running on the Solana blockchain. By shifting heavy computation to backend cloud ledgers, any individual with a mobile smartphone can mine $VVX tokens effortlessly without battery drain, CPU/GPU overheating, or cellular bandwidth exhaustion.
+          </p>
+          <ul>
+            <li><strong>Zero Device Strain:</strong> 100% cloud-orchestrated simulation with zero local battery drain.</li>
+            <li><strong>Sub-Second Finality:</strong> Solana SPL token protocol with sub-400ms transaction speeds.</li>
+            <li><strong>Democratized Access:</strong> Fair base earning velocity for pioneers in over 150+ countries.</li>
+          </ul>
+
+          <h3>1.3 Target Demographic & Global Web3 Onboarding</h3>
+          <p>
+            Our primary mission is to bridge non-crypto natives into the Web3 economy. By offering an intuitive mobile interface, simplified Google Sign-In, and referral-driven social growth, Vivex Network lowers the technical onboarding friction to zero.
+          </p>
+          <ul>
+            <li><strong>Seamless Onboarding:</strong> OAuth 2.0 single-click Google Sign-In authentication.</li>
+            <li><strong>Social Network Mechanics:</strong> Multi-tier referral engines that boost earning velocity.</li>
+            <li><strong>Financial Inclusion:</strong> Empowering mobile users in developing Web3 markets.</li>
+          </ul>
+        </section>
+
+        <!-- Chapter 2 -->
+        <section id="ch2" class="doc-section">
+          <div class="badge-glow" style="margin-bottom: 0.5rem;">CHAPTER 02 • 65,000+ TPS CAPACITY</div>
+          <h2>2. Blockchain & Enterprise Security Architecture</h2>
+          <p><strong>Subtitle:</strong> Solana SPL Token Standard & Supabase Enterprise Security</p>
+
+          <h3>2.1 Solana SPL High-Throughput Infrastructure</h3>
+          <p>
+            Vivex Network is built natively on the Solana blockchain utilizing the SPL Token Standard. Solana provides enterprise-grade scalability, capable of executing over 65,000 transactions per second (TPS) at average transaction costs under $0.00025.
+          </p>
+          <ul>
+            <li><strong>Solana SPL Native Token:</strong> Native minting architecture fully compatible with Solana Web3 wallets.</li>
+            <li><strong>Pioneer Wallet Address Binding:</strong> Direct in-app binding of personal Solana addresses (Phantom, Solflare, Backpack).</li>
+            <li><strong>Zero Gas Fee Subsidy Engine:</strong> Vivex Network operates a relayer vault that sponsors 100% of transfer gas fees for Pioneers during pre-listing TGE distribution.</li>
+          </ul>
+
+          <h3>2.2 Cloud Infrastructure & Supabase AES-256 Security</h3>
+          <p>
+            Backend operations are hosted on enterprise Supabase infrastructure, incorporating PostgreSQL database clusters, Row-Level Security (RLS) tenant isolation policies, AES-256 database encryption at rest, and TLS 1.3 encryption in transit.
+          </p>
+          <ul>
+            <li><strong>Supabase AES-256 Encryption at Rest:</strong> All stored database ledgers and user records are encrypted.</li>
+            <li><strong>TLS 1.3 Transport Layer Security:</strong> Secure HTTPS communication between Android client and cloud APIs.</li>
+            <li><strong>Database Row-Level Security (RLS):</strong> Strict tenant isolation ensuring zero cross-account data exposure.</li>
+            <li><strong>Real-Time Atomic State Engine:</strong> Instant database synchronization for cloud mining sessions and balances.</li>
+          </ul>
+        </section>
+
+        <!-- Chapter 3 -->
+        <section id="ch3" class="doc-section">
+          <div class="badge-glow" style="margin-bottom: 0.5rem;">CHAPTER 03 • 1 BILLION CAPPED SUPPLY</div>
+          <h2>3. Tokenomics & Deflationary Economics</h2>
+          <p><strong>Subtitle:</strong> Deficit-Proof 1 Billion Capped Supply & 100% Unmined Burn</p>
+
+          <h3>3.1 Capped Token Allocation Breakdown (1,000,000,000 $VVX)</h3>
+          <p>
+            The maximum hard-capped total supply of $VVX is strictly limited to 1,000,000,000 (1 Billion) tokens. Supply is transparently allocated across key operational pillars:
+          </p>
+          <ul>
+            <li><strong>70% (700,000,000 $VVX):</strong> Community Cloud Mining Pool (Gradually emitted across Milestone Tiers 1-4).</li>
+            <li><strong>10% (100,000,000 $VVX):</strong> DEX/CEX Liquidity Provision (50% unlocked at TGE, 50% locked in smart contract for 24 Months).</li>
+            <li><strong>8% (80,000,000 $VVX):</strong> Core Engineering & Founder Team (12-Month strict cliff, 0% at launch, 24-Month linear monthly vesting).</li>
+            <li><strong>7% (70,000,000 $VVX):</strong> Staking Yield & Reserve Vault (Locked for 36 Months in smart contract vault to reward long-term stakers).</li>
+            <li><strong>5% (50,000,000 $VVX):</strong> Global Marketing & Regional Expansion (20% TGE unlock, 12-Month linear vesting).</li>
+          </ul>
+
+          <h3>3.2 The 100% Unmined Supply Burn Mechanism</h3>
+          <p>
+            Reaching the Phase 4 target milestone of 500,000 active miners triggers an automated, irreversible burn event. ALL remaining unmined $VVX tokens in the 70% community pool will be PERMANENTLY BURNED on-chain.
+          </p>
+          <ul>
+            <li><strong>Guaranteed Scarcity:</strong> All unmined tokens are permanently incinerated on the Solana blockchain.</li>
+            <li><strong>Zero Post-TGE Inflation:</strong> Token creation is hard-capped with zero minting capabilities after burn.</li>
+            <li><strong>Early Pioneer Protection:</strong> Maximizes token scarcity and value accrual for active community miners.</li>
+          </ul>
+        </section>
+
+        <!-- Chapter 4 -->
+        <section id="ch4" class="doc-section">
+          <div class="badge-glow" style="margin-bottom: 0.5rem;">CHAPTER 04 • 4 PHASE ROADMAP</div>
+          <h2>4. Strategic Roadmap & Halving Mechanics</h2>
+          <p><strong>Subtitle:</strong> Four Milestone Tiers Leading Directly to TGE Exchange Listing</p>
+
+          <h3>4.1 Four Evolutionary Milestone Tiers</h3>
+          <p>
+            To incentivize early adoption and regulate token emission velocity, mining rewards follow a mathematical halving model tied to active user growth thresholds:
+          </p>
+          <ul>
+            <li><strong>Phase 1 (0 - 100,000 Miners):</strong> Base Mining Rate = 1.0 VVX/hr (Genesis Ignition & Cloud Deployment).</li>
+            <li><strong>Phase 2 (100,000 - 200,000 Miners):</strong> 1st Halving Event (50% Rate Reduction to 0.5 VVX/hr) + Daily Check-In & Staking Multipliers.</li>
+            <li><strong>Phase 3 (200,000 - 350,000 Miners):</strong> 2nd Halving Event (25% Rate Reduction to 0.25 VVX/hr) + Pioneer Solana Address Binding & Pioneer KYC.</li>
+            <li><strong>Phase 4 (500,000 Miners Target):</strong> 100% UNMINED SUPPLY BURN + Pre-Listing Gas-Free Transfers + TGE CEX/DEX Exchange Listing.</li>
+          </ul>
+
+          <h3>4.2 TGE Execution & Exchange Integration Protocol</h3>
+          <p>
+            Upon achieving 500,000 active miners, automated smart contracts trigger the Token Generation Event (TGE). Verified Pioneer balances are transferred to bound Solana addresses, accompanied by initial liquidity seeding on decentralized exchanges (DEXs) and central exchange (CEX) listings.
+          </p>
+          <ul>
+            <li><strong>100% Gas Subsidy:</strong> Zero transfer fees charged to Pioneers during distribution.</li>
+            <li><strong>Decentralized Liquidity:</strong> Initial DEX pool pairing ($VVX / SOL & $VVX / USDC).</li>
+            <li><strong>CEX Deposit Support:</strong> Direct exchange deposit capability on top Tier-1 exchanges.</li>
+          </ul>
+        </section>
+
+        <!-- Chapter 5 -->
+        <section id="ch5" class="doc-section">
+          <div class="badge-glow" style="margin-bottom: 0.5rem;">CHAPTER 05 • STRICT FAIR PLAY POLICY</div>
+          <h2>5. Security Architecture & Anti-Cheat System</h2>
+          <p><strong>Subtitle:</strong> Multi-Layered Sybil-Proof Defense & Hardware Fingerprinting</p>
+
+          <h3>5.1 Multi-Layered Anti-Sybil Defense Engine</h3>
+          <p>
+            To safeguard ecosystem fairness for legitimate human miners, Vivex Network deploys automated anti-cheat telemetry and security verification checks:
+          </p>
+          <ul>
+            <li><strong>One Account Per Device:</strong> Hardware fingerprinting via salted ANDROID_ID hashing.</li>
+            <li><strong>Root & Debug Detection:</strong> System integrity checks via RootChecker to block tampered devices.</li>
+            <li><strong>Anti-Emulator & VM Shields:</strong> Automated blocking of BlueStacks, LDPlayer, Nox, VMOS, Parallel Space & App Cloners.</li>
+            <li><strong>Bot & Macro Mitigation:</strong> Pattern recognition algorithms detecting auto-clickers, macro tools & modified APK binaries.</li>
+            <li><strong>Network & Proxy Auditing:</strong> Detection and blocking of automated referral farms utilizing VPNs or TOR nodes.</li>
+          </ul>
+
+          <h3>5.2 Enforcement & Immediate Forfeiture Penalties</h3>
+          <p>
+            Accounts violating anti-cheat rules are subjected to immediate enforcement actions, including permanent account termination, hardware blacklisting, and total forfeiture/burning of accumulated virtual balances without notice or financial compensation.
+          </p>
+          <ul>
+            <li><strong>Permanent Hardware Blacklisting:</strong> Banning unique Device IDs and hardware hashes.</li>
+            <li><strong>Total Token Eradication:</strong> Fraudulent balances are permanently wiped from database ledgers.</li>
+            <li><strong>Zero Financial Recourse:</strong> Anti-cheat enforcement decisions are final and binding.</li>
+          </ul>
+        </section>
+
+        <!-- Chapter 6 -->
+        <section id="ch6" class="doc-section">
+          <div class="badge-glow" style="margin-bottom: 0.5rem;">CHAPTER 06 • PRIVACY & GDPR COMPLIANCE</div>
+          <h2>6. Privacy Policy, Data Protection & Account Governance</h2>
+          <p><strong>Subtitle:</strong> Strict 18+ Age Requirement & Immediate Post-KYC Data Purge</p>
+
+          <h3>6.1 Strict 18+ Age Requirement & Minor Protection</h3>
+          <p>
+            Vivex Network is strictly intended for individuals who are at least 18 years of age. Underage usage is strictly prohibited under our Terms of Service. Accounts created by individuals under 18 will be terminated immediately upon detection.
+          </p>
+          <ul>
+            <li><strong>Strict 18+ Age Limit:</strong> Minimum age of 18 years required globally.</li>
+            <li><strong>Automated Minor Detection:</strong> Immediate account termination for policy non-compliance.</li>
+            <li><strong>COPPA & GDPR Compliance:</strong> Full compliance with international minor protection standards.</li>
+          </ul>
+
+          <h3>6.2 Post-KYC Immediate Raw Data Purge Guarantee</h3>
+          <p>
+            In Phase 3 / Phase 4, Pioneers complete Know Your Customer (KYC) identity verification to prevent sybil bot attacks. To protect user privacy and eliminate data leak risks, raw identity document scans and selfie photos are IMMEDIATELY AND PERMANENTLY PURGED / DELETED from active storage as soon as verification validation is finalized.
+          </p>
+          <ul>
+            <li><strong>IMMEDIATE RAW DATA DELETION:</strong> National ID scans, Passport photos, and facial selfies are permanently deleted post-validation.</li>
+            <li><strong>Encrypted Status Flag:</strong> Only a cryptographically hashed status flag (kyc_verified = true) is retained in Supabase.</li>
+            <li><strong>Zero Identity Leak Risk:</strong> Raw identity documents are NEVER stored permanently on our cloud servers.</li>
+          </ul>
+
+          <h3>6.3 Direct Instant In-App Account & Data Deletion</h3>
+          <p>
+            In compliance with Google Play Developer Policies, users can instantly delete their account and wipe all personal data at any time without waiting for email approvals via Settings > Delete Account.
+          </p>
+          <ul>
+            <li><strong>Instant Self-Service Deletion:</strong> Navigate to Settings > Delete Account > Confirm Delete.</li>
+            <li><strong>Immediate Data Wiping:</strong> Instantly purges profile records, OAuth tokens, balances, and local session caches.</li>
+            <li><strong>Backup Support Email:</strong> Manual deletion request support via support@vivexnetwork.com for lost devices.</li>
+          </ul>
+        </section>
+
+        <!-- Chapter 7 -->
+        <section id="ch7" class="doc-section">
+          <div class="badge-glow" style="margin-bottom: 0.5rem;">CHAPTER 07 • DAO & STAKING VAULTS</div>
+          <h2>7. Token Utility, Staking & Governance DAO</h2>
+          <p><strong>Subtitle:</strong> Long-Term Ecosystem Utility & Community Sovereignty</p>
+
+          <h3>7.1 Multi-Utility Ecosystem Framework</h3>
+          <p>
+            The $VVX token powers all economic interactions within the Vivex Network ecosystem, serving as a governance asset, staking collateral, and peer-to-peer utility token.
+          </p>
+          <ul>
+            <li><strong>Decentralized Staking Yields:</strong> Lock $VVX tokens in smart contract vaults to earn yield rewards from the 7% Staking Reserve.</li>
+            <li><strong>Mining Velocity Boosts:</strong> Hold staked $VVX to unlock active mining rate multipliers.</li>
+            <li><strong>Community DAO Governance:</strong> $VVX holders vote on protocol upgrades, grant allocations, and ecosystem expansion.</li>
+          </ul>
+        </section>
+
+        <!-- Chapter 8 -->
+        <section id="ch8" class="doc-section">
+          <div class="badge-glow" style="margin-bottom: 0.5rem;">CHAPTER 08 • LEGAL DISCLAIMER</div>
+          <h2>8. Legal Framework & Risk Disclosures</h2>
+          <p><strong>Subtitle:</strong> Regulatory Status & Disclaimer of Financial Warranties</p>
+
+          <h3>8.1 Non-Security & Non-Fiat Status</h3>
+          <p>
+            Vivex Network ($VVX) tokens are virtual utility items intended solely for use within the Vivex Network ecosystem. They do not constitute legal tender, fiat currency, securities, stocks, bonds, or financial investments under any legal jurisdiction.
+          </p>
+          <ul>
+            <li><strong>No Guarantee of Monetary Value:</strong> Virtual tokens carry no promised monetary return or fixed exchange price.</li>
+            <li><strong>Educational Cloud Simulation:</strong> Cloud mining is a virtual distribution mechanism with zero hardware load.</li>
+            <li><strong>Compliance Commitment:</strong> Adherence to applicable global digital asset laws and Google Play Developer policies.</li>
+          </ul>
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../" class="logo">
+            <div class="logo-icon">V</div>
+            <div class="logo-text">Vivex <span>Network</span></div>
+          </a>
+          <p>The next-generation mobile Web3 cloud mining and community ecosystem.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="../">Home</a></li>
+            <li><a href="./">Whitepaper</a></li>
+            <li><a href="../#download">Download App</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="../privacy/">Privacy Policy</a></li>
+            <li><a href="../terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Community</h4>
+          <ul class="footer-links">
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">X (Twitter)</a></li>
+            <li><a href="#">Discord</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Vivex Network. All rights reserved.</p>
+        <p>Built for GitHub Pages static hosting.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="../js/script.js"></script>
+</body>
+</html>

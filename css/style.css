@@ -246,6 +246,25 @@ body {
   transform: translateY(-2px);
 }
 
+.btn-playstore {
+  background: #0f172a;
+  color: #ffffff;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: var(--transition);
+}
+
+.btn-playstore:hover {
+  background: #1e293b;
+  border-color: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(16, 185, 129, 0.3);
+}
+
+.btn-playstore svg {
+  fill: #34d399;
+}
+
 /* Hero Section */
 .hero {
   padding: 6rem 0 4rem;

@@ -641,9 +641,43 @@ body {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    height: 60px;
+    padding: 0 0.75rem;
+  }
+
+  .logo {
+    font-size: 1.15rem;
+    gap: 8px;
+    white-space: nowrap;
+  }
+
+  .logo-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header-cta {
+    gap: 0.5rem;
+  }
+
+  .header-cta .btn {
+    padding: 0.35rem 0.85rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .mobile-toggle {
+    display: block;
+    padding: 4px 6px;
+    font-size: 1.3rem;
+  }
+
   .nav-links {
     position: fixed;
-    top: 80px;
+    top: 60px;
     left: 0;
     width: 100%;
     background: rgba(8, 11, 17, 0.98);
@@ -659,10 +693,6 @@ body {
 
   .nav-links.active {
     transform: translateY(0);
-  }
-
-  .mobile-toggle {
-    display: block;
   }
 
   .hero-title {
